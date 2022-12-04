@@ -52,7 +52,7 @@ function getUserprompts(){
     choiceArray = choiceArray.concat(numberArray);
   }
   if(confirm("Would you like special characters included in the password?")){ // special characters
-    choiceArray = choiceArray.concat(upperCaseArray);
+    choiceArray = choiceArray.concat(specialCharactersArray);
   }
   return true; 
 }
