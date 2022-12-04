@@ -38,7 +38,7 @@ function getUserprompts(){
   choiceArray = [];
   characterLength = parseInt(prompt("How many characters will the password be? (Range is 8 - 128 characters)."))
  
-  if(isNaN(characterLength) || characterLength < 8 || characterLength > 128) { // check char length is correct value range
+  if(!characterLength === Number || characterLength < 8 || characterLength > 128) { // check char length is correct value range
     alert("Character must be an integer between 8 and 128")
     return false
   }
