@@ -14,7 +14,7 @@ body,
 
 body {
   font-family: monospace;
-  background-color: rgb(187, 174, 174);
+  background-color: rgb(184, 202, 186);
 }
 
 .wrapper {
@@ -24,10 +24,12 @@ body {
 }
 
 header {
+  font-family: monospace;
   text-align: center;
-  padding: 20px;
+  font-size: larger;
+  padding: 30px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(204, 85%, 56%);
 }
 
 .card {
@@ -38,7 +40,7 @@ header {
   color: hsl(206, 17%, 28%);
   font-size: 18px;
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 700px;
   padding: 30px 40px;
 }
 
@@ -116,6 +118,11 @@ button[disabled] {
   border-radius: 6px;
   resize: none;
   overflow: hidden;
+}
+
+.footer-text {
+  font-size: medium;
+  text-align  : center;
 }
 
 @media (max-width: 690px) {
