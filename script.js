@@ -11,7 +11,7 @@ var numberArray = ['1','2','3','4','5','6','7','8','9','0'];
 
 // Write password to the #password input
 function writePassword() {
-  var correctPrompts = getUserpromts();
+  var correctPrompts = getUserprompts();
   var passwordText = document.querySelector("#password");
 
   if (correctPrompts){ // If the promts have been returned correctly, run the password generator function
@@ -30,11 +30,11 @@ function generatePassword(){
     var randomIndex = Math.floor(Math.random() * choiceArray.length);
     password = password + choiceArray[randomIndex];
   }
-  return password;
+  return password; 
 }
 
 // Series of user promts to determine length and type of characters included 
-function getUserpromts(){
+function getUserprompts(){
   choiceArray = [];
   characterLength = parseInt(prompt("How many characters will the password be? (Range is 8 - 128 characters)."))
  
