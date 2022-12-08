@@ -54,14 +54,16 @@ function getUserprompts(){
   if(confirm("Would you like special characters included in the password?")){ // special characters
     choiceArray = choiceArray.concat(specialCharactersArray);
   }
+  if(choiceArray.length === 0){
+    alert("Error - you must confirm at least one choice of character type")
+    return false;
+  } 
   return true; 
 }
-
-
 
 // Get references to the #generate element (existing code)
 var generateBtn = document.querySelector("#generate");
 
-
 // Add event listener to generate button (existing code)
 generateBtn.addEventListener("click", writePassword);
+
